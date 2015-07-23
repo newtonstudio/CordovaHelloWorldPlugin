@@ -1,0 +1,38 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.iteatech.helloworldPlugin"
+    version="0.0.1">
+
+    <name>HelloWorldPlugin</name>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <description>This plugin shows you how to integrate ios plugin into your cordova app.</description>
+    <author>Jason Tian</author>
+    <keywords>helloWorld</keywords>
+
+    <license>MIT</license>
+
+    <js-module src="www/HelloWorldPlugin.js" name="HelloWorldPlugin">
+        <clobbers target="window.HelloWorldPlugin" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="HelloWorldPlugin">
+                <param name="ios-package" value="HelloWorldPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/HelloWorldPlugin.h" />
+
+        <source-file src="src/ios/HelloWorldPlugin.m"
+            compiler-flags="-fno-objc-arc" />
+    </platform>    
+
+    
+</plugin>
