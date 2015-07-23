@@ -14,14 +14,15 @@ Installation
 
 Usage
 -------
-<!doctype html>
-<html lang="en" ng-app="app">
-    <head>
-       <title>helloWorld</title>
-       <script src="cordova.js"></script>
-    </head>
-<body>
-    <script>
+
+&lt;!doctype html&gt;
+&lt;html lang="en" ng-app="app"&gt;
+    &lt;head&gt;
+       &lt;title&gt;helloWorld&lt;/title&gt;
+       &lt;script src="cordova.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
         document.addEventListener("deviceready", function () {
                                   
            HelloWorldPlugin.echo(function(e){
@@ -31,6 +32,7 @@ Usage
                                  }, "anything to pass to ios here");
                                   
         },false);
-    </script>
-</body>
-</html>
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
