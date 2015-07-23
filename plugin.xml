@@ -16,7 +16,7 @@
     <license>MIT</license>
 
     <js-module src="www/HelloWorldPlugin.js" name="HelloWorldPlugin">
-        <clobbers target="window.HelloWorldPlugin" />
+        <clobbers target="HelloWorldPlugin" />
     </js-module>
 
     <!-- ios -->
