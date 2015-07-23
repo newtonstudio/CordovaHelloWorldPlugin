@@ -12,3 +12,25 @@ Installation
 2. To remove this plugin type: `cordova plugin remove com.iteatech.helloworldPlugin` or `phonegap local plugin remove com.iteatech.helloworldPlugin`
 
 
+Usage
+-------
+<!doctype html>
+<html lang="en" ng-app="app">
+    <head>
+       <title>helloWorld</title>
+       <script src="cordova.js"></script>
+    </head>
+<body>
+    <script>
+        document.addEventListener("deviceready", function () {
+                                  
+           HelloWorldPlugin.echo(function(e){
+                                 alert(e); //ios will return the value you pass into
+                                 },function(){
+                                 alert('fail');
+                                 }, "anything to pass to ios here");
+                                  
+        },false);
+    </script>
+</body>
+</html>
