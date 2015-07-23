@@ -17,12 +17,13 @@ Usage
 
 &lt;!doctype html&gt;
 &lt;html lang="en" ng-app="app"&gt;
-    &lt;head&gt;
-       &lt;title&gt;helloWorld&lt;/title&gt;
-       &lt;script src="cordova.js"&gt;&lt;/script&gt;
-    &lt;/head&gt;
+&lt;head&gt;
+&lt;title&gt;helloWorld&lt;/title&gt;
+&lt;script src="cordova.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 &lt;body&gt;
-    &lt;script&gt;
+&lt;script&gt;
+```javascript	
         document.addEventListener("deviceready", function () {
                                   
            HelloWorldPlugin.echo(function(e){
@@ -32,7 +33,8 @@ Usage
                                  }, "anything to pass to ios here");
                                   
         },false);
-    &lt;/script&gt;
+```		
+&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 
